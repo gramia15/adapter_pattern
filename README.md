@@ -2,7 +2,7 @@
 
 This pattern is easy to understand as the real world is full of adapters.   For example consider a USB to Ethernet adapter. We need this when we have an Ethernet interface on one end and USB on the other. Since they are incompatible with each other. we use an adapter that converts one to other. This example is pretty analogous to Object Oriented Adapters. In design, adapters are used when we have a class (Client) expecting some type of object and we have an object (Adaptee) offering the same features but exposing a different interface.
 
-##### To use an adapter:
+#### To use an adapter:
 - The client makes a request to the adapter by calling a method on it using the target interface.
 - The adapter translates that request on the adaptee using the adaptee interface.
 - Client receive the results of the call and is unaware of adapter’s presence.
@@ -106,7 +106,7 @@ class Main
 } 
 ```
 
-##### Output:
+#### Output:
 
 > Sparrow...
 
@@ -122,7 +122,7 @@ class Main
 
 > Chirp Chirp
 
-##### Explanation:
+#### Explanation:
 
 Suppose we have a bird that can makeSound(), and we have a plastic toy duck that can squeak(). Now suppose our client changes the requirement and he wants the toyDuck to makeSound than ?
 Simple solution is that we will just change the implementation class to the new adapter class and tell the client to pass the instance of the bird(which wants to squeak()) to that class.
@@ -136,7 +136,7 @@ You can see that by changing just one line the toyDuck can now do Chirp Chirp !!
 The adapter pattern we have implemented above is called Object Adapter Pattern because the adapter holds an instance of adaptee. 
 There is also another type called Class Adapter Pattern which use inheritance instead of composition but you require multiple inheritance to implement it.
 
-##### Class diagram of Class Adapter Pattern:
+#### Class diagram of Class Adapter Pattern:
 ![Class diagram of Class Adapter Pattern](https://media.geeksforgeeks.org/wp-content/uploads/classDiagram33.jpg "Class diagram of Class Adapter Pattern")
 
 Here instead of having an adaptee object inside adapter (composition) to make use of its functionality adapter inherits the adaptee.
