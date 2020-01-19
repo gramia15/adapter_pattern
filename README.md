@@ -11,7 +11,7 @@ This pattern is easy to understand as the real world is full of adapters.   For 
 
 The adapter pattern convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
 
-##### Class Diagram:
+#### Class Diagram:
 ![Class Diagram](https://media.geeksforgeeks.org/wp-content/uploads/classDiagram.jpg "Class Diagram")
 
 The client sees only the target interface and not the adapter. The adapter implements the target interface. Adapter delegates all requests to Adaptee.
@@ -151,5 +151,5 @@ Since multiple inheritance is not supported by many languages including java and
 - All requests are forwarded, so there is a slight increase in the overhead.
 - Sometimes many adaptations are required along an adapter chain to reach the type which is required.
 
-##### References:
+#### References:
 *[Copy-Paste from geeksforgeeks.com](https://www.geeksforgeeks.org/adapter-pattern/)*
