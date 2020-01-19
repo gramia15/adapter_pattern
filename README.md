@@ -109,11 +109,17 @@ class Main
 ##### Output:
 
 > Sparrow...
+
 > Flying
+
 > Chirp Chirp
+
 > ToyDuck...
+
 > Squeak
+
 > BirdAdapter...
+
 > Chirp Chirp
 
 ##### Explanation:
