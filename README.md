@@ -128,6 +128,7 @@ Suppose we have a bird that can makeSound(), and we have a plastic toy duck that
 Simple solution is that we will just change the implementation class to the new adapter class and tell the client to pass the instance of the bird(which wants to squeak()) to that class.
 
 **Before**: ToyDuck toyDuck = new PlasticToyDuck();
+
 **After**: ToyDuck toyDuck = new BirdAdapter(sparrow);
 
 You can see that by changing just one line the toyDuck can now do Chirp Chirp !!
